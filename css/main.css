@@ -20,6 +20,8 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0;
+  padding: .4rem;
 }
 
 img {
@@ -62,6 +64,10 @@ img:nth-child(1), img:nth-child(3) {
 
   img:first-child {
     display: inline-block;
+  }
+
+  body {
+    padding: .4rem 1.6rem;
   }
 
 }
