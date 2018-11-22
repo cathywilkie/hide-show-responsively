@@ -1,0 +1,66 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+img {
+  display: none;
+  width: 100%;
+  padding: .3rem;
+}
+
+img:nth-child(1), img:nth-child(3) {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img {
+    display: inline-block;
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  img {
+    width: 33.33%;
+  }
+
+  img:first-child {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img {
+    display: inline-block;
+    width: 25%;
+  }
+
+  img:first-child {
+    display: inline-block;
+  }
+
+}
